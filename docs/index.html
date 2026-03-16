@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Android Customization — Ultimate Resource Hub</title>
+<meta name="description" content="The best Android customization tools, launchers, icon packs, ROMs, Shizuku apps, ADB tools, and debloating guides. Curated for power users.">
+<meta name="keywords" content="android customization, best android launchers, android adb tools, shizuku apps, android debloat, android ROMs, android privacy, KWGT, KLWP, icon packs">
+<meta property="og:title" content="Awesome Android Customization">
+<meta property="og:description" content="The ultimate curated list of Android customization resources — launchers, themes, ADB tools, Shizuku apps, ROMs, and more.">
+<meta property="og:image" content="https://raw.githubusercontent.com/OutrageousStorm/awesome-android-customization/main/banner.png">
+<link rel="canonical" href="https://outrageousstorm.github.io/awesome-android-customization/">
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --blue: #58a6ff;
+    --purple: #bc8cff;
+    --orange: #ff7b72;
+    --yellow: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
+  
+  header { padding: 60px 24px 40px; text-align: center; border-bottom: 1px solid var(--border); }
+  .logo { font-size: 3rem; margin-bottom: 8px; }
+  h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 12px; }
+  .tagline { font-size: 1.1rem; color: var(--muted); max-width: 600px; margin: 0 auto 24px; }
+  .badges { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .badge { background: var(--surface); border: 1px solid var(--border); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: var(--muted); }
+  .badge.green { color: var(--green); border-color: var(--green); }
+  .badge.blue { color: var(--blue); border-color: var(--blue); }
+
+  nav { display: flex; gap: 0; justify-content: center; border-bottom: 1px solid var(--border); overflow-x: auto; }
+  .nav-link { padding: 12px 20px; color: var(--muted); text-decoration: none; font-size: 0.9rem; white-space: nowrap; transition: color 0.2s; }
+  .nav-link:hover { color: var(--text); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+  
+  .section { margin-bottom: 48px; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .section-icon { font-size: 1.5rem; }
+  h2 { font-size: 1.4rem; font-weight: 600; }
+  .section-count { background: var(--surface); border: 1px solid var(--border); padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; color: var(--muted); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-decoration: none; color: inherit; transition: border-color 0.2s, transform 0.1s; display: block; }
+  .card:hover { border-color: var(--blue); transform: translateY(-1px); }
+  .card-name { font-weight: 600; color: var(--blue); margin-bottom: 4px; }
+  .card-desc { font-size: 0.85rem; color: var(--muted); }
+  .card-tag { display: inline-block; background: rgba(88,166,255,0.1); color: var(--blue); font-size: 0.7rem; padding: 1px 6px; border-radius: 4px; margin-top: 8px; }
+  .card-tag.free { background: rgba(63,185,80,0.1); color: var(--green); }
+  .card-tag.paid { background: rgba(210,153,34,0.1); color: var(--yellow); }
+  .card-tag.root { background: rgba(255,123,114,0.1); color: var(--orange); }
+
+  .tool-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: #000; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; margin: 4px; transition: opacity 0.2s; }
+  .tool-btn:hover { opacity: 0.85; }
+  .tool-btn.ghost { background: transparent; color: var(--blue); border: 1px solid var(--blue); }
+
+  .cta { text-align: center; padding: 48px 24px; background: var(--surface); border-radius: 12px; border: 1px solid var(--border); margin-bottom: 48px; }
+  .cta h2 { margin-bottom: 8px; }
+  .cta p { color: var(--muted); margin-bottom: 20px; }
+
+  footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  footer a { color: var(--blue); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📱</div>
+  <h1>Awesome Android Customization</h1>
+  <p class="tagline">The most complete curated list of Android customization tools, apps, and guides — maintained by the community.</p>
+  <div class="badges">
+    <span class="badge green">✓ No Root Required</span>
+    <span class="badge blue">150+ Resources</span>
+    <span class="badge">Android 8.0+</span>
+    <span class="badge">Updated March 2026</span>
+  </div>
+</header>
+
+<nav>
+  <a class="nav-link" href="#launchers">Launchers</a>
+  <a class="nav-link" href="#shizuku">Shizuku</a>
+  <a class="nav-link" href="#adb-tools">ADB Tools</a>
+  <a class="nav-link" href="#debloat">Debloat</a>
+  <a class="nav-link" href="#roms">ROMs</a>
+  <a class="nav-link" href="#privacy">Privacy</a>
+  <a class="nav-link" href="#theming">Theming</a>
+  <a class="nav-link" href="https://github.com/OutrageousStorm/awesome-android-customization">GitHub →</a>
+</nav>
+
+<main>
+
+  <section class="section" id="launchers">
+    <div class="section-header">
+      <span class="section-icon">🚀</span>
+      <h2>Launchers</h2>
+      <span class="section-count">12 apps</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">
+        <div class="card-name">Nova Launcher</div>
+        <div class="card-desc">The most customizable launcher on Android. Gestures, icon packs, grid size, everything.</div>
+        <span class="card-tag paid">Paid (Prime)</span>
+      </a>
+      <a class="card" href="https://lawnchair.app">
+        <div class="card-name">Lawnchair</div>
+        <div class="card-desc">Open-source Pixel Launcher clone with unlimited customization. Totally free.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.sec.android.app.launcher">
+        <div class="card-name">Niagara Launcher</div>
+        <div class="card-desc">Minimalist, one-handed design. Fastest way to reach any app or contact.</div>
+        <span class="card-tag paid">Freemium</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.microsoft.launcher">
+        <div class="card-name">Microsoft Launcher</div>
+        <div class="card-desc">Deep Windows integration, excellent widgets, Cortana. Surprisingly good.</div>
+        <span class="card-tag free">Free</span>
+      </a>
+      <a class="card" href="https://github.com/amirzaidi/Launcher3">
+        <div class="card-name">KISS Launcher</div>
+        <div class="card-desc">Ultra-minimalist. Everything is search. 0 bloat, 0 lag, actually fast.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.olauncher">
+        <div class="card-name">OLauncher</div>
+        <div class="card-desc">Text-only minimal launcher. Good for a digital detox or focus mode.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="shizuku">
+    <div class="section-header">
+      <span class="section-icon">🔌</span>
+      <h2>Shizuku Apps — Root Without Root</h2>
+      <span class="section-count">24 apps</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://github.com/RikkaApps/Shizuku">
+        <div class="card-name">Shizuku</div>
+        <div class="card-desc">The foundation. Grants system API access via ADB. Install this first.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://github.com/MuntashirAkon/AppManager">
+        <div class="card-name">App Manager</div>
+        <div class="card-desc">Block components, revoke permissions, freeze apps, view trackers. Insane depth.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://github.com/Iamlooker/Droid-ify">
+        <div class="card-name">Droid-ify</div>
+        <div class="card-desc">F-Droid client with Shizuku for silent installs. No user interaction needed.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.lahm.library">
+        <div class="card-name">aShell</div>
+        <div class="card-desc">ADB shell on your device via Shizuku. No PC needed after setup.</div>
+        <span class="card-tag free">Free</span>
+      </a>
+      <a class="card" href="https://github.com/MuntashirAkon/SAI">
+        <div class="card-name">SAI (Split APKs Installer)</div>
+        <div class="card-desc">Install split APKs and APK bundles without root or sideloading restrictions.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.cerdic.apkinstaller">
+        <div class="card-name">Canta</div>
+        <div class="card-desc">Debloater app powered by Shizuku. Uses UAD-NG's package database for safety ratings.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="adb-tools">
+    <div class="section-header">
+      <span class="section-icon">🔧</span>
+      <h2>ADB Tools</h2>
+      <span class="section-count">8 tools</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://github.com/OutrageousStorm/android-adb-toolkit">
+        <div class="card-name">Android ADB Toolkit ★</div>
+        <div class="card-desc">Web-based GUI for ADB commands. DPI, animations, debloat, permissions. Open source.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://github.com/OutrageousStorm/android-privacy-hardener">
+        <div class="card-name">Android Privacy Hardener ★</div>
+        <div class="card-desc">Shell script that revokes tracking permissions and disables telemetry in 5 minutes.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://github.com/OutrageousStorm/ADB-CHEATSHEET.md">
+        <div class="card-name">ADB Cheat Sheet 2026</div>
+        <div class="card-desc">50+ ready-to-run ADB commands. Performance, privacy, backup, display tweaks.</div>
+        <span class="card-tag free">Reference</span>
+      </a>
+      <a class="card" href="https://developer.android.com/tools/adb">
+        <div class="card-name">ADB Official Docs</div>
+        <div class="card-desc">Google's official ADB documentation. Reference when you need the full spec.</div>
+        <span class="card-tag free">Docs</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="debloat">
+    <div class="section-header">
+      <span class="section-icon">🗑️</span>
+      <h2>Debloating</h2>
+      <span class="section-count">6 tools</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation">
+        <div class="card-name">UAD-NG</div>
+        <div class="card-desc">The gold standard. GUI debloater with curated package safety ratings. Must-have.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://github.com/0x192/universal-android-debloater">
+        <div class="card-name">UAD (original)</div>
+        <div class="card-desc">Original universal debloater. Good reference for older device profiles.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+      <a class="card" href="https://github.com/OutrageousStorm/android-tv-debloat-toolkit">
+        <div class="card-name">Android TV Debloat ★</div>
+        <div class="card-desc">Specialized for Android TV / Google TV. Removes ads and pre-installed bloat.</div>
+        <span class="card-tag free">Free & Open Source</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="theming">
+    <div class="section-header">
+      <span class="section-icon">🎨</span>
+      <h2>Theming & Widgets</h2>
+      <span class="section-count">10 apps</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://play.google.com/store/apps/details?id=org.kustom.widget">
+        <div class="card-name">KWGT</div>
+        <div class="card-desc">Kustom Widget Maker. Build any widget you can imagine with zero coding.</div>
+        <span class="card-tag paid">Freemium</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper">
+        <div class="card-name">KLWP</div>
+        <div class="card-desc">Kustom Live Wallpaper. Animated, interactive wallpapers tied to your phone data.</div>
+        <span class="card-tag paid">Freemium</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.batuhan.interakt">
+        <div class="card-name">Interakt</div>
+        <div class="card-desc">Dynamic island for any Android phone. Shows notifications, media, timers.</div>
+        <span class="card-tag free">Free</span>
+      </a>
+      <a class="card" href="https://play.google.com/store/apps/details?id=projekt.substratum">
+        <div class="card-name">Substratum</div>
+        <div class="card-desc">Deep system theming engine. Requires Andromeda plugin for non-root use.</div>
+        <span class="card-tag root">Root/Magisk</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>🌟 Find this useful?</h2>
+    <p>Star the GitHub repo to help others find it. Contributions welcome — open a PR to add a resource.</p>
+    <a class="tool-btn" href="https://github.com/OutrageousStorm/awesome-android-customization">⭐ Star on GitHub</a>
+    <a class="tool-btn ghost" href="https://ko-fi.com/outrageousstorm">☕ Support on Ko-fi</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>Maintained by <a href="https://github.com/OutrageousStorm">Tom | Android Intelligence</a> · <a href="https://github.com/OutrageousStorm/awesome-android-customization">GitHub</a> · MIT License</p>
+</footer>
+
+</body>
+</html>
