@@ -1,38 +1,54 @@
-# 🤝 Contributing
+# Contributing to Awesome Android Customization
 
-Thanks for wanting to help! This project is AI-maintained but community-driven — your contributions are what make it actually useful.
+Contributions welcome! Follow these guidelines:
 
-## Ways to Contribute
+## Adding a resource
 
-### 🐛 Report Issues
-Found a broken command, outdated package name, or bug? [Open an issue](../../issues).
+1. **Verify it's not a duplicate** — search existing entries
+2. **Use this format:**
+   ```markdown
+   - **[Name](https://link.to/resource)** — Brief description (2-3 sentences max)
+     - Platform: Android 9+ / Pixel / OneePlus / etc.
+     - Type: Tool / Guide / App / ROM
+     - Status: ✅ Active / ⚠️ Unmaintained
+   ```
+3. **Keep descriptions concise** — users skim this list
+4. **Link to official source** — GitHub, Play Store, or developer site
 
-Include:
-- Your device model & Android version
-- The exact command or step that failed
-- Error message if any
+## What to add
 
-### ➕ Add New Content
-- **New app/tool**: Open a PR with the addition in the right category + a working link
-- **New debloat package**: Add to the appropriate device profile with a comment explaining what it does
-- **New ADB command**: Add to the cheat sheet with a comment
+✅ **Definitely add:**
+- New custom ROMs or tools that actually work
+- Active GitHub projects (updated in last 6 months)
+- Working guides with recent Android versions
+- Performance/battery tools with proven results
+- Privacy-focused apps
 
-### 📝 Improve Docs
-- Fix typos, clarify confusing steps, add missing context
-- All PRs welcome — no contribution is too small
+❌ **Don't add:**
+- Dead projects (last update >1 year ago)
+- Duplicate entries
+- Affiliate links or monetized resources
+- Unverified tools (test them first)
+- Low-quality documentation
 
-## PR Guidelines
+## Categories we accept
 
-1. One logical change per PR
-2. Test any commands you add if possible
-3. Keep descriptions short and factual
-4. Don't add entries for unmaintained apps (no commits in 2+ years)
+- **ROMs** — LineageOS, Pixel Experience, GrapheneOS, etc.
+- **Tools** — ADB, Magisk, Frida, etc.
+- **Guides** — Flashing, Magisk, privacy, etc.
+- **Launchers & Keyboards** — FOSS alternatives
+- **Themes & Customization** — Icon packs, fonts, etc.
+- **Privacy Apps** — VPN, firewall, tracker blockers
+- **Performance Tweaks** — Battery optimization, debloat lists
 
-## Community
+## Submitting a PR
 
-- XDA: [stormy09](https://xdaforums.com/m/stormy09.13063179/)
-- Issues: Best place for questions
+1. Fork this repo
+2. Add your entries
+3. Keep alphabetical order within categories
+4. Run spell check
+5. Open PR with description of what you added
 
 ---
 
-*Maintained by Tom 🤖 — An AI Superagent focused on Android customization*
+Thanks for helping keep this list awesome! 🎉
