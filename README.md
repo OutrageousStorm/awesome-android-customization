@@ -1,70 +1,100 @@
-# 😎 Awesome Android Customization
+# Awesome Android Customization
 
-Curated list of the best Android customization tools, ROMs, and resources.
+Curated list of the best Android customization tools, ROMs, launchers, and mods.
 
-## 🛠️ Tools
+## Custom ROMs
 
-### Device Management
-- [Shizuku](https://shizuku.rikka.app) — ADB access without USB, persistent privilege escalation
-- [App Manager](https://muntashirakon.github.io/AppManager/) — full app control, permissions, ops, components
-- [Material Files](https://github.com/zhanghai/MaterialFiles) — powerful file manager
-- [Termux](https://termux.dev) — full Linux terminal on Android
+### AOSP-based
+- **LineageOS** (https://lineageos.org) — 200+ devices, clean AOSP, regular updates
+- **GrapheneOS** (https://grapheneos.org) — Pixel only, security-focused, hardened
+- **CalyxOS** (https://calyxos.org) — Privacy-first, microG built-in
+- **crDroid** (https://github.com/crdroidandroid) — Heavy customization, performance
+- **Evolution X** (https://github.com/Evolution-X) — Pixel-like experience
+- **Pixel Experience** (https://get.pixelexperience.org) — Stock Pixel OS on any device
+- **DivestOS** (https://divestos.org) — De-Googled, privacy-hardened
 
-### Customization
-- [Kustom Live Wallpaper](https://www.kuustomlwp.com/) — fully programmable wallpapers
-- [KWGT](https://www.kuustomlwp.com/) — widget builder
-- [Tasker](https://tasker.joaoapps.com/) — automation engine
-- [MacroDroid](https://www.macrodroid.com/) — automation without programming
+### Manufacturer-based
+- **OxygenOS** (OnePlus) — clean, minimal OEM skin
+- **MIUI** (Xiaomi) — feature-rich but ad-heavy
+- **Samsung One UI** (Samsung) — heavy customization, good features
 
-### Privacy & Security
-- [Netguard](https://netguard.me) — firewall without root
-- [Trackercontrol](https://trackercontrol.org) — tracker blocker
-- [Orbot](https://orbot.app) — Tor VPN
-- [Bitwarden](https://bitwarden.com) — password manager
+## Launchers
 
-### Launchers
-- [Lawnchair](https://lawnchair.app) — Pixel Launcher fork
-- [Nova Launcher](https://www.nova-launcher.com/) — highly customizable
-- [Niagara Launcher](https://niagara.lawnchair.app/) — minimal reimagining
-- [Hyperion Launcher](https://github.com/laurencedawson/action-launcher-reference) — feature-rich
+- **Lawnchair** (https://github.com/LawnchairLauncher) — Material Design, Pixel vibes
+- **KISS Launcher** (https://github.com/Neamar/KISS) — ultralight, fast
+- **Nova Launcher** (paid) — most customizable, tons of options
+- **Niagara** (paid) — gesture-focused, unique UX
+- **Omega** (fork of Lawnchair) — enhanced Pixel launcher
 
-### Icon Packs
-- [Arcticons](https://play.google.com/store/apps/details?id=com.donnnno.arcticons) — minimalist geometric
-- [Orus Icon Pack](https://www.orus.io/) — round and colorful
-- [Lawnicons](https://github.com/LawnchairLauncher/lawnicons) — Lawnchair's icon set
+## Icon Packs
 
-## 📱 ROMs
+- **Lux** — minimalist, geometric
+- **Whicons** — monochrome, clean
+- **Dweelz** — colorful, playful
+- **Eva** — flat, modern
 
-### Privacy/Security
-- [GrapheneOS](https://grapheneos.org) — hardened Android (Pixel only)
-- [CalyxOS](https://calyxos.org) — privacy-focused
-- [DivestOS](https://divestos.org) — de-Googled
+## Keyboard Apps
 
-### Feature-Rich
-- [LineageOS](https://lineageos.org) — closest to vanilla AOSP
-- [crDroid](https://crdroid.net) — customization
-- [Evolution X](https://evolution-x.org) — modern and fast
-- [Pixel Experience](https://pixelexperiencegithub.github.io/) — Pixel UI
+- **FUTO Keyboard** (https://keyboard.futo.org) — no internet, privacy-focused
+- **OpenBoard** (https://github.com/openboard-team/openboard) — AOSP keyboard fork
+- **Gboard** — Google's keyboard (with tracking)
+- **Thumb-key** — one-handed keyboard
 
-### Gaming/Performance
-- [Oxygen OS](https://www.oneplus.com/) — OnePlus (official, clean)
-- [HyperOS](https://hyperos.xiaomi.com/) — Xiaomi (fast, customizable)
-- [One UI](https://www.samsung.com/) — Samsung (feature-rich)
+## File Managers
 
-## 🔐 Root Solutions
+- **MiXplorer** (https://forum.xda-developers.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/) — most powerful
+- **Material Files** (https://github.com/zhanghai/MaterialFiles) — Material Design, clean
+- **Total Commander** (paid) — classic, dual-pane
 
-- [Magisk](https://topjohnwu.github.io/Magisk/) — systemless root with Zygisk
-- [KernelSU](https://kernelsu.org) — kernel-level root
-- [SuperSU](https://www.supersuapp.com/) — legacy, no longer maintained
+## Customization Tools
 
-## 📚 References
+- **Magisk** (https://github.com/topjohnwu/Magisk) — systemless root framework
+- **KernelSU** (https://kernelsu.org) — kernel-level root
+- **LSPosed** (https://github.com/LSPosed/LSPosed) — Xposed on modern Android
+- **Shizuku** (https://shizuku.rikka.app) — ADB-level privilege elevation
+- **App Cloner** — multiple instances of apps
+- **Island** — parallel space for app isolation
 
-- [ROM Haven Wiki](https://romhaven.wikioasis.org) — device-specific ROM database
-- [The Android Wiki](https://theandroidwiki.com) — custom ROM encyclopedia
-- [XDA Developers](https://www.xda-developers.com) — forums and development
-- [r/Android](https://reddit.com/r/android) — community
-- [r/SetupA12](https://reddit.com/r/SetupA12) — iOS research + Android discussion
+## Keyboard Launchers
+
+- **Sesame Shortcuts** — gesture shortcuts
+- **Edge Gestures** — edge swipe gestures
+- **Always On AMOLED** — custom always-on display
+
+## System Themers
+
+- **Swift Installer** — theme system apps
+- **Iconify** (LSPosed) — full system theming
+- **Substratum** (legacy) — system theming framework
+
+## Battery & Performance
+
+- **Greenify** — aggressive backgrounding
+- **AccA** (Magisk) — charge limit setting
+- **SetCPU** (or in-kernel tools) — CPU frequency control
+
+## ADB Tools
+
+- **scrcpy** (https://github.com/Genymobile/scrcpy) — screen mirror & control
+- **adb-sync** — two-way file sync
+- **Shizuku** — ADB access from apps
+
+## Developer Resources
+
+- **Android Open Source Project** (https://android.googlesource.com)
+- **Android Studio** (https://developer.android.com/studio)
+- **Magisk Module Development** (https://topjohnwu.github.io/Magisk/)
+- **TWRP Device Tree Template** (https://github.com/TeamWin/)
+
+## Must-Read Guides
+
+- [ROM Haven Wiki](https://romhaven.wikioasis.org) — device flash guides
+- [SetupA12 Subreddit](https://reddit.com/r/SetupA12) — iOS activation bypass
+- [r/Android](https://reddit.com/r/Android) — news and discussion
+- [XDA Forums](https://forum.xda-developers.com) — development hub
 
 ---
 
-**Want to contribute?** Add tools, ROMs, or resources via pull request.
+**Contributing:** Submit PRs with new tools, ROMs, or resources.
+
+*Maintained by [OutrageousStorm](https://github.com/OutrageousStorm)*
