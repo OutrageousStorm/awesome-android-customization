@@ -42,3 +42,9 @@ Curated list of the best Android customization tools, ROMs, launchers, and resou
 - [XDA Developers](https://xda-developers.com) — The Android hub
 
 *Maintained by [OutrageousStorm](https://github.com/OutrageousStorm)*
+
+## Kotlin/Android Dev
+
+- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
+- [Jetpack Compose](https://developer.android.com/jetpack/compose)
+- [Hilt DI](https://dagger.dev/hilt/)
