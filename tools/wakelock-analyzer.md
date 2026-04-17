@@ -1,0 +1,1 @@
+Shell script to parse bugreports and find battery drain culprits. See github.com/OutrageousStorm/android-wakelock-analyzer for full Python version.
