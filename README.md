@@ -1,54 +1,70 @@
-# 📱 Awesome Android Customization
+# 😎 Awesome Android Customization
 
-Curated list of the best Android customization tools, ROMs, kernels, and tweaks.
+Curated list of the best Android customization tools, ROMs, and resources.
 
-## 🔝 Top picks
+## 🛠️ Tools
 
-**Custom ROMs** → [LineageOS](lineageos.org), [GrapheneOS](grapheneos.org), [crDroid](crdroid.net)  
-**Launchers** → Lawnchair, KISS, Nova, Niagra  
-**Magisk** → [topjohnwu/Magisk](https://github.com/topjohnwu/Magisk)  
-**Kernel** → [KernelSU](https://kernelsu.org), [franco Kernel](https://franco-kernel.com)  
-**Themes** → [Iconify](https://github.com/Mahmud0808/Iconify), [Material You](https://www.bing.com/ck/a?!&&p=8f8c8c8c)
+### Device Management
+- [Shizuku](https://shizuku.rikka.app) — ADB access without USB, persistent privilege escalation
+- [App Manager](https://muntashirakon.github.io/AppManager/) — full app control, permissions, ops, components
+- [Material Files](https://github.com/zhanghai/MaterialFiles) — powerful file manager
+- [Termux](https://termux.dev) — full Linux terminal on Android
 
-## Launchers
+### Customization
+- [Kustom Live Wallpaper](https://www.kuustomlwp.com/) — fully programmable wallpapers
+- [KWGT](https://www.kuustomlwp.com/) — widget builder
+- [Tasker](https://tasker.joaoapps.com/) — automation engine
+- [MacroDroid](https://www.macrodroid.com/) — automation without programming
 
-| Launcher | Features | Link |
-|----------|----------|------|
-| **Lawnchair** | Icon pack support, Material You | [GitHub](https://github.com/LawnchairLauncher/Lawnchair) |
-| **KISS** | Ultra-minimal, search-first | [GitHub](https://github.com/Neamar/KISS) |
-| **Niagra** | Gesture-driven, pocket-friendly | [Website](https://niagra.toolbxforever.com) |
-| **Nova** | Feature-rich, customizable grid | [Play Store](https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher) |
+### Privacy & Security
+- [Netguard](https://netguard.me) — firewall without root
+- [Trackercontrol](https://trackercontrol.org) — tracker blocker
+- [Orbot](https://orbot.app) — Tor VPN
+- [Bitwarden](https://bitwarden.com) — password manager
 
-## Icon packs
+### Launchers
+- [Lawnchair](https://lawnchair.app) — Pixel Launcher fork
+- [Nova Launcher](https://www.nova-launcher.com/) — highly customizable
+- [Niagara Launcher](https://niagara.lawnchair.app/) — minimal reimagining
+- [Hyperion Launcher](https://github.com/laurencedawson/action-launcher-reference) — feature-rich
 
-| Pack | Style | Source |
-|------|-------|--------|
-| **Material Icons** | Official Google | [GitHub](https://github.com/google/material-design-icons) |
-| **Arcticons** | Minimalist outlines | [F-Droid](https://f-droid.org/en/packages/com.donnnno.arcticons) |
-| **Icalendar** | Functional, calendar | [GitHub](https://github.com/danziger/Icalendar) |
+### Icon Packs
+- [Arcticons](https://play.google.com/store/apps/details?id=com.donnnno.arcticons) — minimalist geometric
+- [Orus Icon Pack](https://www.orus.io/) — round and colorful
+- [Lawnicons](https://github.com/LawnchairLauncher/lawnicons) — Lawnchair's icon set
 
-## System UI tweaks
+## 📱 ROMs
 
-| Tool | Does | Root |
-|------|------|------|
-| **GravityBox** (LSPosed) | Status bar, buttons, animations | No |
-| **Iconify** (LSPosed) | Full UI theming | No |
-| **Customization Sideload** | Pixel UI features | No |
+### Privacy/Security
+- [GrapheneOS](https://grapheneos.org) — hardened Android (Pixel only)
+- [CalyxOS](https://calyxos.org) — privacy-focused
+- [DivestOS](https://divestos.org) — de-Googled
 
-## ADB tweaks
+### Feature-Rich
+- [LineageOS](https://lineageos.org) — closest to vanilla AOSP
+- [crDroid](https://crdroid.net) — customization
+- [Evolution X](https://evolution-x.org) — modern and fast
+- [Pixel Experience](https://pixelexperiencegithub.github.io/) — Pixel UI
 
-| Tweak | Command |
-|-------|---------|
-| Hide navigation bar | `adb shell settings put secure navigation_bar_visible 0` |
-| Increase animation speed | `adb shell settings put global animator_duration_scale 0.5` |
-| Immersive mode | `adb shell settings put global immersive_mode_confirmations confirmed` |
-| Disable bloatware | `adb shell pm uninstall -k --user 0 <package>` |
+### Gaming/Performance
+- [Oxygen OS](https://www.oneplus.com/) — OnePlus (official, clean)
+- [HyperOS](https://hyperos.xiaomi.com/) — Xiaomi (fast, customizable)
+- [One UI](https://www.samsung.com/) — Samsung (feature-rich)
 
-## Kernel customizers
+## 🔐 Root Solutions
 
-| Tool | Purpose | Link |
-|------|---------|------|
-| **Kernel Adiutor** | CPU, GPU, I/O tuning | [GitHub](https://github.com/grarak/KernelAdiutor) |
-| **FKM Kernel Manager** | Franco Kernel control | [XDA](https://forum.xda-developers.com/t/app-2-9-fkm-kernel-manager.3437207/) |
+- [Magisk](https://topjohnwu.github.io/Magisk/) — systemless root with Zygisk
+- [KernelSU](https://kernelsu.org) — kernel-level root
+- [SuperSU](https://www.supersuapp.com/) — legacy, no longer maintained
 
-See full guide → [android-rom-guide](https://github.com/OutrageousStorm/android-rom-guide)
+## 📚 References
+
+- [ROM Haven Wiki](https://romhaven.wikioasis.org) — device-specific ROM database
+- [The Android Wiki](https://theandroidwiki.com) — custom ROM encyclopedia
+- [XDA Developers](https://www.xda-developers.com) — forums and development
+- [r/Android](https://reddit.com/r/android) — community
+- [r/SetupA12](https://reddit.com/r/SetupA12) — iOS research + Android discussion
+
+---
+
+**Want to contribute?** Add tools, ROMs, or resources via pull request.
