@@ -1,50 +1,54 @@
 # 📱 Awesome Android Customization
 
-Curated list of the best Android customization tools, ROMs, launchers, and resources.
+Curated list of the best Android customization tools, ROMs, kernels, and tweaks.
 
-## Quick Links
-- [ROMs](#roms) | [Launchers](#launchers) | [ADB Tools](#adb-tools) | [Security](#security)
+## 🔝 Top picks
 
-## ROMs
-
-**Stock Android / AOSP:**
-- [LineageOS](https://lineageos.org) — 200+ devices, the standard
-- [Pixel Experience](https://pixelexperience.org) — Stock Pixel on any device
-- [crDroid](https://crdroid.net) — Feature-rich AOSP
-- [Evolution X](https://evolution-x.org) — Clean and stable
-
-**Privacy:**
-- [GrapheneOS](https://grapheneos.org) — Maximum security (Pixel only)
-- [CalyxOS](https://calyxos.org) — Privacy by default, microG included
-- [DivestOS](https://divestos.org) — Remove Google, 200+ devices
+**Custom ROMs** → [LineageOS](lineageos.org), [GrapheneOS](grapheneos.org), [crDroid](crdroid.net)  
+**Launchers** → Lawnchair, KISS, Nova, Niagra  
+**Magisk** → [topjohnwu/Magisk](https://github.com/topjohnwu/Magisk)  
+**Kernel** → [KernelSU](https://kernelsu.org), [franco Kernel](https://franco-kernel.com)  
+**Themes** → [Iconify](https://github.com/Mahmud0808/Iconify), [Material You](https://www.bing.com/ck/a?!&&p=8f8c8c8c)
 
 ## Launchers
 
-- [Lawnchair](https://lawnchair.app) — Open-source AOSP fork
-- [Nova Launcher](https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher) — Most customizable
-- [AOSP Launcher](https://github.com/aospa/android_packages_apps_Launcher3) — Minimal
+| Launcher | Features | Link |
+|----------|----------|------|
+| **Lawnchair** | Icon pack support, Material You | [GitHub](https://github.com/LawnchairLauncher/Lawnchair) |
+| **KISS** | Ultra-minimal, search-first | [GitHub](https://github.com/Neamar/KISS) |
+| **Niagra** | Gesture-driven, pocket-friendly | [Website](https://niagra.toolbxforever.com) |
+| **Nova** | Feature-rich, customizable grid | [Play Store](https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher) |
 
-## ADB Tools
+## Icon packs
 
-- [android-toolkit-scripts](https://github.com/OutrageousStorm/android-toolkit-scripts) — Device info, audit, backup
-- [android-adb-cheatsheet](https://github.com/OutrageousStorm/android-adb-cheatsheet) — 150+ ADB commands
-- [frida-scripts-android](https://github.com/OutrageousStorm/frida-scripts-android) — Dynamic analysis
+| Pack | Style | Source |
+|------|-------|--------|
+| **Material Icons** | Official Google | [GitHub](https://github.com/google/material-design-icons) |
+| **Arcticons** | Minimalist outlines | [F-Droid](https://f-droid.org/en/packages/com.donnnno.arcticons) |
+| **Icalendar** | Functional, calendar | [GitHub](https://github.com/danziger/Icalendar) |
 
-## Security & Root
+## System UI tweaks
 
-- [Magisk](https://github.com/topjohnwu/Magisk) — Systemless root
-- [KernelSU](https://kernelsu.org) — Kernel-level root
-- [Shizuku](https://shizuku.rikka.app) — Root alternative via ADB
+| Tool | Does | Root |
+|------|------|------|
+| **GravityBox** (LSPosed) | Status bar, buttons, animations | No |
+| **Iconify** (LSPosed) | Full UI theming | No |
+| **Customization Sideload** | Pixel UI features | No |
 
-## Resources
+## ADB tweaks
 
-- [ROM Haven Wiki](https://romhaven.wikioasis.org) — Device database
-- [XDA Developers](https://xda-developers.com) — The Android hub
+| Tweak | Command |
+|-------|---------|
+| Hide navigation bar | `adb shell settings put secure navigation_bar_visible 0` |
+| Increase animation speed | `adb shell settings put global animator_duration_scale 0.5` |
+| Immersive mode | `adb shell settings put global immersive_mode_confirmations confirmed` |
+| Disable bloatware | `adb shell pm uninstall -k --user 0 <package>` |
 
-*Maintained by [OutrageousStorm](https://github.com/OutrageousStorm)*
+## Kernel customizers
 
-## Kotlin/Android Dev
+| Tool | Purpose | Link |
+|------|---------|------|
+| **Kernel Adiutor** | CPU, GPU, I/O tuning | [GitHub](https://github.com/grarak/KernelAdiutor) |
+| **FKM Kernel Manager** | Franco Kernel control | [XDA](https://forum.xda-developers.com/t/app-2-9-fkm-kernel-manager.3437207/) |
 
-- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
-- [Jetpack Compose](https://developer.android.com/jetpack/compose)
-- [Hilt DI](https://dagger.dev/hilt/)
+See full guide → [android-rom-guide](https://github.com/OutrageousStorm/android-rom-guide)
