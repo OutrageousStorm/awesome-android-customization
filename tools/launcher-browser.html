@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Android Launcher Browser</title>
+    <style>
+        body { font-family: Consolas, monospace; background: #0a0e27; color: #c0c0c0; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #4dd0e1; }
+        input { width: 100%; padding: 10px; margin: 10px 0; background: #1a1f3a; border: 1px solid #4dd0e1; color: #c0c0c0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; margin-top: 20px; }
+        .card { background: #1a1f3a; border-left: 3px solid #4dd0e1; padding: 15px; cursor: pointer; }
+        .card:hover { background: #262d47; }
+        .card-name { font-weight: bold; color: #4dd0e1; }
+        .card-desc { font-size: 0.9em; color: #999; margin-top: 5px; }
+        .tag { display: inline-block; background: #0d1a2e; color: #4dd0e1; padding: 2px 8px; margin: 3px 3px 0 0; border-radius: 3px; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Android Launcher Browser</h1>
+        <p>Search and explore Android launchers with customization support.</p>
+        
+        <input type="text" id="search" placeholder="Search launchers..." autofocus>
+        
+        <div class="grid" id="grid"></div>
+    </div>
+
+    <script>
+        const launchers = [
+            { name: "Nova Launcher", desc: "Highly customizable with gestures", tags: ["paid", "material", "themes"], link: "https://novalauncher.com" },
+            { name: "Lawnchair", desc: "AOSP-based, open source, Pixel Launcher style", tags: ["foss", "pixel"], link: "https://github.com/LawnchairLauncher/Lawnchair" },
+            { name: "Niagara Launcher", desc: "Minimalist vertical list interface", tags: ["paid", "minimal"], link: "https://niagara.online" },
+            { name: "Action Launcher", desc: "Quickdrawer, themes, icon packs", tags: ["paid", "customizable"], link: "https://actionlauncher.com" },
+            { name: "Poco Launcher", desc: "POCO/Xiaomi launcher, clean", tags: ["lightweight"], link: "https://f-droid.org/en/packages/com.xiaomi.home" },
+            { name: "KISS Launcher", desc: "Search-focused, minimal", tags: ["foss", "search"], link: "https://kisslauncher.com" },
+            { name: "Evie Launcher", desc: "Fast, AI search, minimal", tags: ["free", "search"], link: "https://evielauncher.com" },
+            { name: "Microsoft Launcher", desc: "Integration with Outlook, OneDrive", tags: ["microsoft", "cloud"], link: "https://play.google.com/store/apps/details?id=com.microsoft.launcher" },
+            { name: "Smart Launcher", desc: "Category-based organization", tags: ["free"], link: "https://www.smartlauncher.net" },
+            { name: "Apex Launcher", desc: "Customization, transitions, icon packs", tags: ["paid"], link: "https://apexlauncher.com" },
+        ];
+
+        const grid = document.getElementById('grid');
+        const search = document.getElementById('search');
+
+        function render(items) {
+            grid.innerHTML = items.map(l => `
+                <div class="card" onclick="window.open('${l.link}')">
+                    <div class="card-name">${l.name}</div>
+                    <div class="card-desc">${l.desc}</div>
+                    <div>${l.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+                </div>
+            `).join('');
+        }
+
+        search.addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase();
+            const filtered = q ? launchers.filter(l => 
+                l.name.toLowerCase().includes(q) || 
+                l.desc.toLowerCase().includes(q) ||
+                l.tags.some(t => t.toLowerCase().includes(q))
+            ) : launchers;
+            render(filtered);
+        });
+
+        render(launchers);
+    </script>
+</body>
+</html>
