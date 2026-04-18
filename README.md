@@ -1,75 +1,55 @@
 # Awesome Android Customization
 
-A curated list of the best Android customization tools, ROMs, and resources.
+A curated list of the best Android customization tools, ROMs, and tweaks.
 
 ## Custom ROMs
 
-| ROM | Devices | Pros |
-|-----|---------|------|
-| **LineageOS** | 200+ | Official, stable, minimal |
-| **GrapheneOS** | Pixel only | Maximum privacy & security |
-| **Pixel Experience** | 100+ | Pixel UI on any device |
-| **crDroid** | 150+ | Feature-packed, customizable |
-| **Evolution X** | 100+ | Gaming-friendly, smooth |
-| **ArrowOS** | 80+ | Lightweight, clean |
-| **CalyxOS** | Pixel, OnePlus | Privacy-focused with microG |
+- [LineageOS](https://lineageos.org) — clean AOSP fork, 200+ devices
+- [GrapheneOS](https://grapheneos.org) — hardened privacy ROM (Pixel-only)
+- [crDroid](https://crdroid.net) — feature-rich community ROM
+- [Pixel Experience](https://pixelexperience.org) — pixel-like UI on any device
+- [Evolution X](https://evolution-x.org) — modern design + customization
 
-## Launchers
+## Custom Kernels
 
-- **Lawnchair** (F-Droid) — Material Design, open source
-- **KISS Launcher** (F-Droid) — Ultra-minimal, fast
-- **Niagara Launcher** (Play) — gesture-based, unique
-- **Nova Launcher** (Play) — highly customizable, paid
+- [Linux Kernel](https://kernel.org) — official AOSP kernel docs
+- **KernelSU** — kernel-level root via module (better than Magisk for detection)
+- **DKMS Kernels** — per-device optimized kernels on XDA
+- **Franco Kernel** — performance + stability
+- **Boeffla Kernel** — battery focus with OC/UV
 
-## Icon Packs
+## Magisk Modules
 
-- **Linebit** (F-Droid) — minimalist line icons
-- **Paprika** (F-Droid) — colorful, modern
-- **Glimpse** (F-Droid) — thin geometric icons
-- **Pix** (Play) — Google-style flat design
-
-## Keyboard
-
-- **FUTO Keyboard** (F-Droid) — open source, no network
-- **Openboard** (F-Droid) — simple, clean
-- **Gboard** (Play) — Google's powerful keyboard
-- **GrammarlyKeyboard** (Play) — writing assistant
-
-## System Mods (via Magisk)
-
-- **PlayIntegrityFix** — pass attestation checks
-- **Universal GMS Doze** — aggressive battery saver
-- **Shamiko** — advanced root hiding
-- **LSPosed** — Xposed framework alternative
-
-## Network & Privacy
-
-- **Mullvad VPN** (F-Droid) — anonymous VPN, free
-- **Orbot** (F-Droid) — Tor for Android
-- **NetGuard** (F-Droid) — per-app firewall
-- **AdAway** (F-Droid) — system-wide ad blocking
+- **Shamiko** — Hide root from Play Integrity
+- **PlayIntegrityFix** — Spoof device as unmodified
+- **Universal GMS Doze** — Kill Google Play Services background drain
+- **LSPosed** — Xposed framework without system install
 
 ## Tools
 
-- **Shizuku** (GitHub) — ADB commands without USB
-- **App Manager** (F-Droid) — full app control
-- **Material Files** (F-Droid) — open source file manager
-- **ADB Wireless** (F-Droid) — wireless ADB via Wi-Fi
+- [Shizuku](https://shizuku.rikka.app) — ADB-level privileges without root
+- **TWRP** — Custom recovery for flashing
+- **OrangeFox Recovery** — Modern UI recovery
+- **Magisk Manager** — Root installation and modules
 
-## Widget Collections
+## Launchers
 
-- **KWGT** (Play) — premium widgets
-- **Zooper Widget** (Play) — highly customizable
-- **Tes Widgets** (F-Droid) — minimal, beautiful
+- [Lawnchair](https://github.com/LawnchairLauncher/lawnchair) — Feature-rich FOSS
+- [Nova Launcher](https://novalauncher.com) — Most customizable (paid)
+- [POCO Launcher](https://play.google.com/store/apps/details?id=com.mi.home) — Lightweight
+- [Niagara Launcher](https://niagara.lawnchair.app) — Minimal & fast
 
-## Miscellaneous
+## Lock Screens
 
-- **Termux** (F-Droid) — full Linux terminal on Android
-- **Tasker** (Play) — advanced automation
-- **AutoInput** (Play) — macro recording
-- **Rclone** (F-Droid) — cloud storage sync
+- [Always On AMOLED](https://play.google.com/store/apps/details?id=com.tomer.alwaysonedge) — Low power AOD
+- [Edge Lighting](https://play.google.com/store/apps/details?id=com.edgelightingnotifications.free) — Notification pulse
+
+## Icon Packs
+
+- **Oxy** — Clean modern icons
+- **Rboard Launcher Icons** — Material Design 3
+- **Crayon Icons** — Colorful hand-drawn
 
 ---
 
-### Contributing
-Submit PRs to add tools, ROMs, or resources. Keep descriptions under 1 line.
+See also: [android-rom-guide](https://github.com/OutrageousStorm/android-rom-guide), [magisk-modules-collection](https://github.com/OutrageousStorm/magisk-modules-collection)
