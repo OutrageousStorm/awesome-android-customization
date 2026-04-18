@@ -1,36 +1,33 @@
-# Android Customization Tools
+# 🛠️ Android Tools & Scripts
 
-## System-level tools
+Ready-to-run tools for customization, debugging, and optimization.
 
-| Tool | Type | Purpose |
-|------|------|---------|
-| **AnyKernel3** | Flashable | Universal kernel flashing framework |
-| **MagiskHide Props Config** | Magisk module | Spoof device properties |
-| **MicroG** | Service | Open-source Google Play Services |
-| **LSPosed** | Framework | Xposed hooking on modern Android |
+## ADB-based Tools
+- **android-toolkit-scripts** — Device info, permission audit, debloat, backup
+- **android-tweaks-toolkit** — Screen monitoring, auto-brightness, app launcher
+- **android-adb-cheatsheet** — 150+ ADB commands reference
+- **apk-patcher** — SSL bypass, root detection bypass APK patcher
+- **android-privacy-hardener** — Privacy hardening automation with scoring
 
-## ROM building tools
+## Scripting & Automation
+- **android-toolkit-scripts** — Python + Bash scripts (7 tools)
+- **frida-scripts-android** — Frida hooks: SSL, root, crypto, HTTP, intents, SharedPrefs
+- **android-scrcpy-tools** — scrcpy launcher with gaming/record profiles + automation
 
-| Tool | Language | Purpose |
-|------|----------|---------|
-| **apktool** | Java | APK disassembly and repack |
-| **sign-apk** | Bash | Re-sign APKs with debug key |
-| **ROM Toolbox** | Python | Patch and repack ROMs |
+## Analysis & Forensics
+- **apk-patcher** — Decompile, patch, sign APKs
+- **android-forensics-guide** — APK analysis, Frida, network interception
+- **android-wakelock-analyzer** — Parse bugreports, find battery drain
 
-## Network/Security
+## Notification & System Control
+- **android-notification-listener** — Capture, log, auto-reply to notifications
+- **aod-suite** — Always On Display customization via Shizuku
 
-| Tool | Type | Purpose |
-|------|------|---------|
-| **Burp Suite** | Desktop | HTTP/HTTPS proxy for testing |
-| **mitmproxy** | Python | Terminal-based HTTP interceptor |
-| **tcpdump** | Binary | Low-level packet capture |
-| **Wireshark** | Desktop | Network traffic analysis |
+## Installation
+Most tools need:
+```bash
+adb devices  # Connected Android device
+pip install rich  # For pretty output (optional)
+```
 
-## Theming & UI
-
-| Tool | Type | Purpose |
-|------|------|---------|
-| **Iconify** | LSPosed module | Modern icon/UI theming |
-| **Custom Fonts** | Magisk module | System font replacement |
-| **Lawnchair** | Launcher | Customizable AOSP launcher |
-| **Nova Launcher** | Launcher | Power-user launcher |
+See individual repos for usage.
