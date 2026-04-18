@@ -1,40 +1,49 @@
-# 🛠️ Essential Android Tools by Category
+# Android Customization Tools
 
-A categorized breakdown of the most useful tools for power users.
+## System Modification
 
-## ADB Toolkits & Automation
-- **android-adb-cheatsheet** — 150+ ADB commands reference
-- **android-toolkit-scripts** — Python + Bash scripts for device info, permissions, backup
-- **android-tweaks-toolkit** — Screen state triggers, brightness scheduling, app launcher
-- **android-scrcpy-tools** — scrcpy launcher profiles + automation replay engine
+| Tool | Language | What it does |
+|------|----------|------------|
+| [Magisk](https://github.com/topjohnwu/Magisk) | Kotlin | Systemless root + module framework |
+| [KernelSU](https://kernelsu.org) | C | Kernel-level root alternative |
+| [Zygisk](https://github.com/LSPosed/Zygisk) | C | Zygote injection framework |
+| [LSPosed](https://github.com/LSPosed/LSPosed) | Kotlin | Xposed framework for Android 8+ |
 
-## ROM & Flashing
-- **android-rom-guide** — Complete custom ROM guide (Samsung, Xiaomi, OnePlus, Pixel)
-- **android-gsi-guide** — Generic System Image (GSI) / Project Treble
-- **twrp-device-trees** — TWRP device tree building from scratch
-- **grapheneos-guide** — GrapheneOS install, Sandboxed Play, hardening
+## Network & Privacy
 
-## Privacy & Security
-- **android-privacy-guide** — 3-level hardening guide (no root required)
-- **android-privacy-hardener** — Automated hardening script + privacy check
-- **android-permission-auditor** — Scan + revoke dangerous permissions
-- **android-security-research** — Root detection, ADB attack surface, Shizuku internals
-- **android-forensics-guide** — APK analysis, Frida, network interception
+| Tool | Language | What it does |
+|------|----------|------------|
+| [Netguard](https://netguard.me) | Java | No-root firewall per-app |
+| [PCAPdroid](https://github.com/emanuele-f/PCAPdroid) | Java/Kotlin | Network traffic sniffer |
+| [Orbot](https://www.torproject.org/download/#android) | Java | Tor proxy for Android |
+| [Treble Shot](https://github.com/trebleshot/android) | Kotlin | LAN file transfer |
 
-## Reverse Engineering & Tools
-- **apk-patcher** — Patch APKs (SSL pinning, root detection bypass)
-- **frida-scripts-android** — 6 drop-in Frida scripts (SSL, root, crypto, HTTP, intents)
-- **android-wakelock-analyzer** — Battery drain culprit detection from bugreports
+## Automation & Scripting
 
-## Notification & Automation
-- **android-notification-listener** — Capture, monitor, auto-reply to notifications
-- **android-scrcpy-tools** — Screen mirroring + tap/swipe automation
+| Tool | Language | What it does |
+|------|----------|------------|
+| [Tasker](https://tasker.joaoapps.com) | Proprietary | Ultimate automation engine |
+| [MacroDroid](https://www.macrodroid.com) | Proprietary | Task automation UI |
+| [Shizuku](https://shizuku.rikka.app) | Kotlin | Grant ADB to apps over WiFi |
+| [Frida](https://frida.re) | Python/JS | Runtime instrumentation framework |
 
-## Advanced Topics
-- **android-kernel-guide** — KernelSU, governors, schedulers, custom kernel building
-- **android-xposed-modules** — LSPosed module collection (privacy, UI, system)
-- **magisk-modules-collection** — Curated Magisk modules
+## File Management
 
-## Data Management
-- **android-debloat-lists** — Safe package removal lists by OEM
-- **android-backup-vault** — Full device backup + restore
+| Tool | Language | What it does |
+|------|----------|------------|
+| [Material Files](https://github.com/zhanghai/MaterialFiles) | Kotlin | Modern open-source file manager |
+| [MiXplorer](https://forum.xda-developers.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/) | Java | Most powerful Android file manager |
+| [Ghost Commander](https://github.com/Ghosty2005/Ghost-Commander) | Java | Twin-panel file explorer |
+
+## Development & Reverse Engineering
+
+| Tool | Language | What it does |
+|------|----------|------------|
+| [Android Studio](https://developer.android.com/studio) | Kotlin | Official Android IDE |
+| [JADX](https://github.com/skylot/jadx) | Java | APK decompiler |
+| [Frida](https://frida.re) | Python/JS | Dynamic code instrumentation |
+| [Burp Suite Community](https://portswigger.net/burp/community) | Java | HTTP proxy & security testing |
+
+---
+
+*All tools are listed for educational use. Use responsibly on devices you own.*
