@@ -1,24 +1,33 @@
-# 🛠️ Tools & CLIs
+# Android Customization Tools
 
-Command-line tools and utilities for Android customization.
+Production-ready tools for Android modding, not just guides.
 
 ## ADB Tools
-- **android-adb-cheatsheet** — 150+ ADB commands reference
-- **android-toolkit-scripts** — Python ADB automation (device info, permission audit, app extractor)
-- **apk-patcher** — Patch APKs for SSL bypass and root detection bypass
-- **android-permission-auditor** — Scan all apps for dangerous permissions
+- [android-toolkit-scripts](https://github.com/OutrageousStorm/android-toolkit-scripts) — device info, permission audit, app extractor, debloater
+- [android-adb-cheatsheet](https://github.com/OutrageousStorm/android-adb-cheatsheet) — 150+ commands reference
+- [android-tweaks-toolkit](https://github.com/OutrageousStorm/android-tweaks-toolkit) — screen monitor, brightness scheduler, app manager
 
-## Screen & Display
-- **android-scrcpy-tools** — scrcpy launcher with profiles and automation
-- **android-wakelock-analyzer** — Parse bugreports for battery drain culprits
+## APK Tools
+- [apk-patcher](https://github.com/OutrageousStorm/apk-patcher) — SSL pinning bypass, root detection removal, network config injection
+- [android-forensics-guide](https://github.com/OutrageousStorm/android-forensics-guide) — jadx, Frida, Burp Suite analysis
 
-## Notifications & Automation
-- **android-notification-listener** — Capture notifications, auto-reply to messages
+## Dynamic Analysis
+- [frida-scripts-android](https://github.com/OutrageousStorm/frida-scripts-android) — 6 Frida scripts (SSL, root, crypto, HTTP, SharedPrefs, Intents)
 
-## Security & Forensics
-- **frida-scripts-android** — 6 drop-in Frida scripts (SSL bypass, root bypass, crypto hooks, HTTP logging)
-- **android-forensics-guide** — APK analysis, dynamic instrumentation guide
+## Notifications
+- [android-notification-listener](https://github.com/OutrageousStorm/android-notification-listener) — monitor, dump, auto-reply
+
+## Screen & Automation
+- [android-scrcpy-tools](https://github.com/OutrageousStorm/android-scrcpy-tools) — scrcpy launcher profiles, tap/swipe automation
+
+## Battery & Performance
+- [android-wakelock-analyzer](https://github.com/OutrageousStorm/android-wakelock-analyzer) — bugreport battery drain analyzer
+- [android-kernel-guide](https://github.com/OutrageousStorm/android-kernel-guide) — KernelSU compilation, governors, schedulers
 
 ## Privacy
-- **android-privacy-hardener** — One-command privacy hardening with audit check
-- **android-debloat-lists** — Pre-made debloat lists for Samsung, Xiaomi, Pixel, OnePlus
+- [android-privacy-hardener](https://github.com/OutrageousStorm/android-privacy-hardener) — harden script with check/audit commands
+- [android-debloat-lists](https://github.com/OutrageousStorm/android-debloat-lists) — pre-made safe-to-remove package lists + bash script
+- [android-permission-auditor](https://github.com/OutrageousStorm/android-permission-auditor) — permission scanner and revoke tool
+
+## Backup & Restore
+- [android-backup-vault](https://github.com/OutrageousStorm/android-backup-vault) — full device backup + restore scripts
