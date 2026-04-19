@@ -1,0 +1,35 @@
+name: Update stats
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"  # Weekly
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - run: |
+          python3 << 'EOF'
+          import json
+          from pathlib import Path
+          from datetime import datetime
+
+          # Update timestamp in README
+          readme = Path("README.md")
+          content = readme.read_text()
+          content = content.replace(
+              "Last updated: ",
+              f"Last updated: {datetime.now().strftime('%Y-%m-%d')}"
+          )
+          readme.write_text(content)
+          print("✓ Updated README timestamp")
+          EOF
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update stats and timestamp"
+          file_pattern: "README.md"
