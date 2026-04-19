@@ -1,33 +1,32 @@
-# 🛠️ Android Tools & Scripts
+# 🛠️ Android Customization Tools
 
-Ready-to-run tools for customization, debugging, and optimization.
+## Root & Privilege Escalation
+| Tool | Type | Use Case |
+|------|------|----------|
+| Magisk | Systemless root | Universal root without modifying /system |
+| KernelSU | Kernel-level | Lightweight alternative, harder to detect |
+| Shizuku | ADB service | No-root privilege escalation |
 
-## ADB-based Tools
-- **android-toolkit-scripts** — Device info, permission audit, debloat, backup
-- **android-tweaks-toolkit** — Screen monitoring, auto-brightness, app launcher
-- **android-adb-cheatsheet** — 150+ ADB commands reference
-- **apk-patcher** — SSL bypass, root detection bypass APK patcher
-- **android-privacy-hardener** — Privacy hardening automation with scoring
+## Custom ROM Projects
+| ROM | Base | Target | Stars |
+|-----|------|--------|-------|
+| LineageOS | AOSP | 200+ devices | 20k+ |
+| GrapheneOS | AOSP | Pixel only | 10k+ |
+| CalyxOS | LineageOS | Pixel/Fairphone | 5k+ |
+| crDroid | AOSP | Heavy mods | 4k+ |
+| Evolution X | AOSP | Pixel experience | 3k+ |
 
-## Scripting & Automation
-- **android-toolkit-scripts** — Python + Bash scripts (7 tools)
-- **frida-scripts-android** — Frida hooks: SSL, root, crypto, HTTP, intents, SharedPrefs
-- **android-scrcpy-tools** — scrcpy launcher with gaming/record profiles + automation
+## Modding Frameworks
+| Framework | Base | Purpose |
+|-----------|------|---------|
+| LSPosed | Zygisk | Xposed on steroids |
+| Riru | Zygote | Riru framework (legacy) |
+| Substrate | Hook API | Legacy hooking |
 
-## Analysis & Forensics
-- **apk-patcher** — Decompile, patch, sign APKs
-- **android-forensics-guide** — APK analysis, Frida, network interception
-- **android-wakelock-analyzer** — Parse bugreports, find battery drain
+## System Tweaks
+- Universal GMS Doze — battery optimization
+- Busybox — Linux utilities
+- FontManager — system font replacement
+- Volume Steps — granular volume control
 
-## Notification & System Control
-- **android-notification-listener** — Capture, log, auto-reply to notifications
-- **aod-suite** — Always On Display customization via Shizuku
-
-## Installation
-Most tools need:
-```bash
-adb devices  # Connected Android device
-pip install rich  # For pretty output (optional)
-```
-
-See individual repos for usage.
+*Updated 2026-04-19*
