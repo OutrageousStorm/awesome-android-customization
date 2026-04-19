@@ -1,41 +1,92 @@
-# Android Tools Index
+# Android Customization Tools
 
-## Command-line tools
+Organized by category and tested on Android 10–15.
 
-| Tool | Language | Purpose |
-|------|----------|---------|
-| ADB | Shell | Android Debug Bridge — device control via USB |
-| Fastboot | Bootloader | Flash firmware partitions |
-| apktool | Java | Decompile/recompile APKs |
-| jadx | Java | Decompile APK to readable Java source |
-| Frida | JavaScript/Python | Runtime instrumentation & hooking |
-| adb-cli | Shell | Enhanced ADB wrapper with device mgmt |
+## Launchers
 
-## Web-based tools
+| Launcher | Features | Min API | Status |
+|----------|----------|---------|--------|
+| **Lawnchair** | AOSP-based, gesture nav, icon themes | 26 | ⭐⭐⭐⭐ active |
+| **Nova Launcher** | Highly customizable, gestures, grid control | 21 | ⭐⭐⭐⭐ polished |
+| **Niagara** | Minimalist card-based UI, single-hand focus | 24 | ⭐⭐⭐⭐ unique |
+| **Hyperion** | AOSP + Material You, minimal | 31 | ⭐⭐⭐ new |
+| **Total Launcher** | Widget-first, scriptable | 15 | ⭐⭐⭐ niche |
+| **Microsoft Launcher** | Outlook integration, cards | 21 | ⭐⭐ bloat |
+| **Pixel Launcher** | Stock Google, feed integration | 26 | ⭐⭐⭐ basic |
 
-| Tool | Purpose | Link |
-|------|---------|------|
-| Browserfreak | APK analyzer | https://apk.browserfreak.com |
-| APKCombo | APK downloader | https://apkcombo.com |
-| DecompileAndroid | Online APK decompiler | https://www.decompileandroid.com |
-
-## Magisk modules (essential)
-
-| Module | Purpose | Link |
-|--------|---------|------|
-| PlayIntegrityFix | Pass Play Integrity checks | https://github.com/chiteroman/PlayIntegrityFix |
-| Universal GMS Doze | Battery: aggressive GMS dozing | Magisk repo |
-| Shamiko | Hide root from apps | https://github.com/LSPosed/Shamiko |
-| LSPosed | Xposed framework | https://github.com/LSPosed/LSPosed |
-
-## Android terminals & shells
-
-| App | Type | Notes |
-|-----|------|-------|
-| Termux | Terminal emulator | Full Linux environment on Android |
-| ADB Wireless | ADB over Wi-Fi | No USB cable needed |
-| JuiceSSH | SSH client | Connect to servers from Android |
+**Best for:** Lawnchair (FOSS), Nova (customization), Niagara (minimalism)
 
 ---
 
-*See also: [Awesome Lists](README.md)*
+## Icon Packs
+
+| Pack | Style | Link |
+|------|-------|------|
+| **Eltantawy** | Flat, geometric | [GitHub](https://github.com) |
+| **Rboard** | Material You, dynamic | Play Store |
+| **Linebit** | Line-based, minimal | Play Store |
+| **Stroke** | Outline icons | F-Droid |
+
+---
+
+## Custom ROMs (Recommended)
+
+| ROM | Base | Features | Best for |
+|-----|------|----------|----------|
+| **GrapheneOS** | AOSP | Security-hardened, Pixel-only | Privacy, security |
+| **LineageOS** | AOSP | Wide device support, no Google | Freedom, stability |
+| **crDroid** | AOSP | Heavy customization | Tweakers |
+| **CalyxOS** | AOSP | microG + privacy | Privacy + apps |
+| **Pixel Experience** | AOSP | Pixel UI, wide devices | Stock + looks |
+
+---
+
+## Keyboard Alternatives
+
+| Keyboard | Features | Root needed | Notes |
+|----------|----------|-------------|-------|
+| **OpenBoard** | FOSS, privacy | No | Clean, minimal |
+| **FUTO Keyboard** | AI, privacy-first | No | New, experimental |
+| **Florisboard** | FOSS, modern | No | Under development |
+| **AnySoftKeyboard** | FOSS, customizable | No | Lightweight |
+| **SwiftKey** | ML predictions | No | Microsoft → privacy risk |
+
+---
+
+## ADB Tools (Power Users)
+
+| Tool | Language | What it does |
+|------|----------|-------------|
+| **scrcpy** | C | Mirror/control Android from PC — zero lag |
+| **netcat** | Shell | Network raw control — ADB over Wi-Fi |
+| **adb-sync** | Python | Bidirectional file sync |
+| **apk-mitm** | JavaScript | Patch APKs for MITM testing |
+| **Frida** | JavaScript | Dynamic app instrumentation |
+
+---
+
+## Settings & Tweaks (No Root)
+
+| Tool | Description | Scope |
+|------|-------------|-------|
+| **Activity Launcher** | Launch hidden activities/settings | App-level |
+| **System UI Tuner** | Unlock hidden Android settings | Global |
+| **Shizuku** | ADB automation from app | User |
+| **NetGuard** | Per-app VPN firewall | Network |
+| **Wireguard** | Lightweight VPN protocol | Network |
+
+---
+
+## Mods & Patches (Root)
+
+| Mod | Magisk/KernelSU | Effect |
+|-----|-----------------|--------|
+| **PlayIntegrityFix** | Magisk | Pass Google hardware checks |
+| **Universal GMS Doze** | Magisk | Massive battery improvement |
+| **Shamiko** | Magisk + Zygisk | Hide root from SafetyNet |
+| **LSPosed** | Magisk + Zygisk | Xposed hooks framework |
+| **TrickyStore** | LSPosed | Spoof hardware attestation |
+
+---
+
+*Last updated: 2026-04-19*
