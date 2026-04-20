@@ -1,54 +1,30 @@
-# Android Tools & Utilities
+# Android Customization Tools (Real Working Software)
 
-Curated collection of the most useful Android development and customization tools.
+Verified tools that actually work — not just links.
 
-## ADB Toolkits
+## ADB-based
 
-- **android-toolkit-scripts** — Python: device_info, permission_audit, app_extractor, backup
-- **android-adb-cheatsheet** — 150+ ADB commands reference
-- **android-adb-toolkit** — Web-based ADB interface
+| Tool | Lang | What | Download |
+|------|------|------|----------|
+| **android-toolkit-scripts** | Python | Device info, permission audit, backup, debloat | [GitHub](https://github.com/OutrageousStorm/android-toolkit-scripts) |
+| **android-wakelock-analyzer** | Python | Parse bugreports, find battery drain culprits | [GitHub](https://github.com/OutrageousStorm/android-wakelock-analyzer) |
+| **APK Patcher** | Python | Remove SSL pinning, bypass root detection | [GitHub](https://github.com/OutrageousStorm/apk-patcher) |
+| **android-privacy-hardener** | Python/Bash | Revoke tracking perms, harden settings | [GitHub](https://github.com/OutrageousStorm/android-privacy-hardener) |
+| **scrcpy Tools** | Python | Screen mirror profiles, automation, recording | [GitHub](https://github.com/OutrageousStorm/android-scrcpy-tools) |
 
-## APK & Security Tools
+## Frida-based (runtime hooking)
 
-- **apk-patcher** — Python: patch APKs for SSL bypass, root detection bypass
-- **android-forensics-guide** — APK analysis, Frida, network interception
-- **frida-scripts-android** — 6 drop-in Frida JS scripts for dynamic analysis
+| Tool | What |
+|------|------|
+| **frida-scripts-android** | SSL bypass, root bypass, crypto logging, HTTP monitor, SharedPrefs spy, Intent logger |
 
-## Notification & Automation
+## ROM-related
 
-- **android-notification-listener** — Capture notifications, auto-reply bot, rules engine
-- **android-scrcpy-tools** — scrcpy profiles, screen automation replay
+| Tool | What |
+|------|------|
+| **AOD Suite** | Always On Display customization via Shizuku |
+| **android-adb-toolkit** | Web UI for ADB commands |
 
-## Battery & Performance
+---
 
-- **android-wakelock-analyzer** — Parse bugreports, find drain culprits
-- **android-tweaks-toolkit** — Screen state triggers, brightness scheduler, app manager
-
-## Backup & Recovery
-
-- **android-backup-vault** — Full device backup + restore scripts
-- **twrp-device-trees** — Build custom TWRP recovery from scratch
-
-## Privacy Hardening
-
-- **android-privacy-guide** — 3-level privacy hardening guide + scripts
-- **android-privacy-hardener** — harden.py + check.py privacy audit
-
-## Kernel & ROM Flashing
-
-- **android-kernel-guide** — KernelSU, governors, compilation guide
-- **android-rom-guide** — Complete ROM flashing reference
-- **android-gsi-guide** — Generic System Image flashing
-- **grapheneos-guide** — GrapheneOS setup + Sandboxed Play
-
-## Permission & App Management
-
-- **android-permission-auditor** — Scan + revoke dangerous permissions
-- **android-debloat-lists** — Ready-to-use debloat package lists
-- **magisk-modules-collection** — Curated Magisk modules
-- **android-xposed-modules** — LSPosed module collection
-
-## iOS Security
-
-- **ios-security-research** — checkm8, Secure Enclave, boot chain, jailbreak landscape
-- **ios-activation-wiki** — Activation Lock architecture & bypass tools
+**More at:** [OutrageousStorm on GitHub](https://github.com/OutrageousStorm)
