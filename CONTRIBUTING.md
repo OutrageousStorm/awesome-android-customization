@@ -1,27 +1,27 @@
-# Contributing to Awesome Android Customization
+# Contributing
 
-Thank you for wanting to contribute! Here's how:
+Found a great Android customization tool? Add it to the list!
 
-## Adding a new link
+## Format
 
-1. **Check for duplicates** — search existing entries by keyword
-2. **Must-have quality** — only add tools that are:
-   - Actively maintained (updated in last 6 months)
-   - Work on modern Android (10+)
-   - Have documentation or README
-3. **Format**: `- [**Name**](link) — One-line description, category tags`
-4. **Categories**: use hashtags like `#roms` `#debloat` `#privacy` `#tools` `#adb` `#kernel`
+```markdown
+- **[Tool Name](link)** — Short description. Tags: `tag1` `tag2`
+```
 
-## Example PR
-- Fork this repo
-- Edit README.md
-- Commit with message: `add: [Tool Name] for [category]`
-- Submit PR with description
+## Categories
 
-## Reporting issues
+- **Launchers** — Home screen alternatives
+- **ROMs** — Custom Android distributions
+- **Kernels** — Custom Linux kernels for Android
+- **Mods** — Magisk modules, Xposed scripts
+- **Tweaks** — ADB scripts, system optimizations
+- **Themes** — Icon packs, system UI mods
+- **Tools** — ADB utilities, backup, debloat
 
-- **Dead link?** Let us know with issue title: `[Dead] Tool Name`
-- **Outdated info?** Link the newer version
-- **Bad recommendation?** Explain why and suggest alternative
+## Quality standards
 
-We curate carefully — quality over quantity.
+- Must be actively maintained (update in last 6 months)
+- Should be open source or at least free
+- No spam, no malware, no cryptocurrency mining
+
+Thanks for contributing! 💙
