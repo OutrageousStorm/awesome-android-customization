@@ -55,7 +55,7 @@ A curated list of the best Android customization tools, ROMs, Magisk modules, an
 ## 🎨 Theming
 
 - **Substratum** — systemwide theming engine (legacy, needs LineageOS mod)
-- **Iconify** — icon packs + UI colors (Magisk + LSPosed)
+- **Iconify** *(requires root)* — icon packs + UI colors (Magisk + LSPosed)
 - **Pling** — theme repository site
 - **Daily Backgrounds** — daily rotating wallpapers
 
