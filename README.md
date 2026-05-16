@@ -1,109 +1,38 @@
 # 📱 Awesome Android Customization
 
-A curated list of the best Android customization tools, ROMs, Magisk modules, and launchers.
+Curated list of the best Android customization tools, ROMs, and resources.
 
-## 🚀 Must-Have ROMs
+## 🔧 ADB Tools & Scripts
+- **android-toolkit-scripts** — 6 working Python ADB tools (device info, permission audit, app extractor, network monitor, backup)
+- **android-adb-cheatsheet** — 150+ ADB commands organized by category
+- **android-tweaks-toolkit** — ADB toolkit with screensaver control, auto-brightness, app launcher
+- **android-scrcpy-tools** — scrcpy launcher with profiles + automation replay engine
 
-| ROM | Best for | Devices |
-|-----|----------|---------|
-| **GrapheneOS** | Maximum security & privacy | Pixel only |
-| **LineageOS** | Clean AOSP, broad device support | 200+ devices |
-| **CalyxOS** | microG + privacy + usability | Pixel + select |
-| **crDroid** | Customization + power user features | 80+ devices |
-| **Evolution X** | Pixel-like UI with tweaks | 50+ devices |
-| **DivestOS** | Privacy-focused AOSP with microG | 250+ devices |
-| **Paranoid Android** | GApps-free pure Android | Select devices |
+## 🛡️ Security & Forensics
+- **frida-scripts-android** — 9 Frida hooks for SSL bypass, root hiding, crypto logging, HTTP interception, notification monitoring
+- **apk-patcher** — Automated APK SSL pinning + root detection bypass via apktool
+- **android-forensics-guide** — Complete reverse engineering + MITM setup guide
+- **android-wakelock-analyzer** — Parse bugreport and find battery drain culprits
 
-## 🔧 Customization Tools
+## 🎨 ROMs & Builds
+- **custom-rom-notes** — GrapheneOS/LineageOS quick-start guides
+- **grapheneos-guide** — Complete GrapheneOS setup with app recommendations
+- **android-rom-guide** — Samsung/Xiaomi/OnePlus/Pixel ROM flashing guides
+- **android-gsi-guide** — Generic System Image (Project Treble) guide
+- **twrp-device-trees** — Build TWRP recovery from scratch
 
-### Magisk (Systemless Root)
-- **PlayIntegrityFix** — pass Google hardware attestation checks
-- **Universal GMS Doze** — aggressive GMS battery limiting
-- **Shamiko** — hide root from apps (requires Zygisk)
-- **LSPosed** — Xposed framework for deep hooks
-- **Icon Recolor** — recolor system icons on-the-fly
+## 🔐 Privacy & Hardening
+- **android-privacy-guide** — 3-level privacy hardening (baseline → advanced)
+- **android-privacy-hardener** — Automated hardening script with audit checks
+- **android-security-research** — Root detection methods, Shizuku internals, ADB attack surface
+- **android-debloat-lists** — Safe-to-remove package lists for Samsung, Xiaomi, Pixel, OnePlus
+- **android-permission-auditor** — Scan every app for dangerous permissions
 
-### Launchers
-- **Nova Launcher** — highly customizable, lightweight
-- **Niagara Launcher** — gesture-first, minimalist UI
-- **Lawnchair** — AOSP Launcher fork with material you
-- **Poco Launcher** — fast, clean, free
-- **Smart Launcher** — AI categorization
-
-### File Managers
-- **MiXplorer** — ultimate feature-packed FM
-- **Material Files** — clean, open source
-- **Total Commander** — Swiss army knife
-
-### Keyboard
-- **Gboard** — Google's all-rounder with GIFs/emoji
-- **SwiftKey** — good prediction, swipe support
-- **FUTO Keyboard** — privacy-first, no network
-- **Florisboard** — fully open source
-
-### Status Bar / System UI
-- **CustomClock** — custom clock faces in status bar
-- **Statusbar Tweaker** — hide icons, control status bar
-- **System UI Tuner** — unlock hidden system settings (Magisk module)
-
-### Lock Screen / AOD
-- **Always On AMOLED** — custom AOD with calendar/weather
-- **Always On Display Pixel** — Pixel-style AOD
-- **AOD Notify** — AOD notifications display
-- **AOD Suite** — advanced AOD via Shizuku
-
-## 🎨 Theming
-
-- **Substratum** — systemwide theming engine (legacy, needs LineageOS mod)
-- **Iconify** *(requires root)* — icon packs + UI colors (Magisk + LSPosed)
-- **Pling** — theme repository site
-- **Daily Backgrounds** — daily rotating wallpapers
-
-## 🔒 Privacy & Security
-
-- **NetGuard** — per-app firewall (no root)
-- **TrackerControl** — block trackers per-app
-- **Orbot** — Tor integration for any app
-- **Bitwarden** — FOSS password manager
-- **Aegis Authenticator** — open source 2FA manager
-
-## 🧩 FOSS App Ecosystem
-
-- **F-Droid** — main FOSS app repository
-- **Obtainium** — install directly from GitHub releases
-- **Aurora Store** — anonymous Play Store access
-- **NewPipe** — YouTube without tracking
-- **Newsy** — RSS reader
-- **Feedreader** — lightweight news aggregator
-
-## 🌐 Custom Hosts / Ad Blocking
-
-- **AdAway** — system-wide ad blocking via /etc/hosts
-- **AdGuard Home** — self-hosted network-level blocker
-- **NetGuard** with blocklists — app-level firewall + filtering
-
-## ⚡ Performance Tweaks
-
-- **Trim Cache** — clean cache safely
-- **Greenify** — aggressive battery limiting for apps
-- **Debloat lists** — remove system bloat via ADB
-- **Custom kernels** — KernelSU, optimized governors
-
-## 🎮 Gaming
-
-- **GameTuner** — FPS limiter, GPU throttle control
-- **Scrcpy** — mirror/control device from PC
-- **AnTuTu** — benchmark & compare performance
-
-## 📚 Documentation
-
-- [ROM Haven Wiki](https://romhaven.wikioasis.org) — device flashing guides
-- [OutrageousStorm GitHub](https://github.com/OutrageousStorm) — tools & scripts
-- [LineageOS Wiki](https://wiki.lineageos.org) — official device info
-- [XDA Forums](https://forum.xda-developers.com) — community ROMs & mods
+## 🚀 Development & Automation
+- **android-kernel-guide** — KernelSU vs Magisk, custom kernel compilation
+- **android-notification-listener** — Capture & auto-reply to notifications
+- **android-wakelock-analyzer** — Battery drain diagnosis tool
 
 ---
-
-**Missing something?** Open an issue or PR. This list is community-driven.
-
-*Last updated: Apr 2026*
+**Total repositories:** 40+  
+**Last updated:** $(date +%Y-%m-%d)
