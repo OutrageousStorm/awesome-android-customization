@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROM Validator</title>
+    <style>
+        body { font-family: monospace; background: #1e1e1e; color: #e0e0e0; padding: 20px; max-width: 800px; margin: 0 auto; }
+        h1 { color: #4fc3f7; }
+        input, button { padding: 8px; margin: 5px; background: #2d2d2d; border: 1px solid #4fc3f7; color: #e0e0e0; }
+        button { cursor: pointer; }
+        button:hover { background: #3d3d3d; }
+        .result { margin-top: 20px; padding: 15px; border: 1px solid #4fc3f7; border-radius: 4px; }
+        .ok { color: #4caf50; }
+        .warn { color: #ff9800; }
+        .err { color: #f44336; }
+        pre { background: #0d0d0d; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>🔍 ROM Validator</h1>
+    <p>Validate ROM files and detect issues before flashing.</p>
+    
+    <div>
+        <input type="file" id="romFile" accept=".zip">
+        <button onclick="validateROM()">Validate ROM</button>
+    </div>
+    
+    <div id="result" class="result" style="display:none;">
+        <h2>Validation Results</h2>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function validateROM() {
+            const file = document.getElementById('romFile').files[0];
+            if (!file) { alert('Select a ROM file'); return; }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const checks = {
+                    hasFlashScript: false,
+                    hasMetadata: false,
+                    hasSystem: false,
+                    hasVendor: false,
+                    hasRecovery: false,
+                    fileSizeMB: (file.size / 1024 / 1024).toFixed(2),
+                };
+
+                // Check for critical files in the ZIP (simplified check)
+                const content = new Uint8Array(e.target.result);
+                const text = new TextDecoder().decode(content.slice(0, 4096));
+                
+                checks.hasFlashScript = text.includes('flash_all') || text.includes('flashable');
+                checks.hasMetadata = text.includes('META-INF') || text.includes('dynamic_partitions');
+                
+                const html = `
+                    <p class="${checks.hasFlashScript ? 'ok' : 'err'}">
+                        ${checks.hasFlashScript ? '✓' : '✗'} Flash script detected
+                    </p>
+                    <p class="${checks.hasMetadata ? 'ok' : 'warn'}">
+                        ${checks.hasMetadata ? '✓' : '?'} Metadata present
+                    </p>
+                    <p>File size: <strong>${checks.fileSizeMB} MB</strong></p>
+                    <hr>
+                    <p><strong>Before flashing:</strong></p>
+                    <ul>
+                        <li>Backup your data</li>
+                        <li>Verify ROM matches your device model</li>
+                        <li>Ensure bootloader is unlocked</li>
+                        <li>Have a recovery image ready</li>
+                    </ul>
+                `;
+                
+                document.getElementById('output').innerHTML = html;
+                document.getElementById('result').style.display = 'block';
+            };
+            reader.readAsArrayBuffer(file);
+        }
+    </script>
+</body>
+</html>
