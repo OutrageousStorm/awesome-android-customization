@@ -1,52 +1,42 @@
-# Android Launchers & Customization UI
+# Android Launcher Comparison
 
-Best Android launchers for customization and performance.
+Most popular custom launchers with feature matrix.
 
-## Feature-Rich Launchers
+| Launcher | Stars | Material You | Gesture | Dev Drawer | Icon Pack | Free |
+|----------|-------|------------|---------|-----------|-----------|------|
+| [Lawnchair](https://github.com/LawnchairLauncher/Lawnchair) | ⭐⭐⭐⭐⭐ | ✓ | ✓ | ✓ | ✓ | Yes |
+| [Niagara](https://niagara.launcher) | ⭐⭐⭐⭐ | ✓ | ✓ | ✗ | ~ | $4.99 |
+| [Sesame](https://github.com/aashishksinha/Sesame) | ⭐⭐⭐ | ✓ | ✓ | ✓ | ✓ | Yes |
+| [POCO Launcher](https://play.google.com/store/apps/details?id=com.mi.home) | ⭐⭐⭐⭐ | ~ | ✓ | ✓ | ✓ | Yes |
+| [Nova Launcher](https://www.novalauncher.com) | ⭐⭐⭐⭐ | ✗ | ✓ | ✓ | ✓ | Free/Prime |
 
-| Launcher | Customization | Performance | Root needed? |
-|----------|--------------|-------------|-------------|
-| **Lawnchair** | Extreme | Good | No |
-| **KISS** | Minimal search-first | Excellent | No |
-| **Nova** | Very high | Good | No |
-| **Microsoft Launcher** | High | Good | No |
-| **Niagara** | High (gesture-first) | Excellent | No |
-| **Evie** | Medium | Excellent | No |
-| **Total Launcher** | Very high | Good | No |
-| **Hyperion** | Medium | Good | No |
+## Recommended setups
 
-## Lightweight (Battery-conscious)
+**Performance-first:**
+- Launcher: Lawnchair (lightweight, open source)
+- Icon pack: Pix (Material Design)
+- Grid: 4×6 (fewer icons = faster scrolling)
 
-- **KISS Launcher** — pure search, 2.5MB, minimal wake locks
-- **Niagara Launcher** — gesture-based, highly optimized
-- **Evie** — clean, fast, icon pack support
-- **Unlauncher** — anti-app launcher, intentional friction
+**Minimal aesthetic:**
+- Launcher: Sesame
+- Wallpaper: solid color
+- App drawer: gesture swipe-up
+- Hidden status bar: YES
 
-## Pixel-like
+**Power user:**
+- Launcher: Nova Prime
+- Gesture: Swipe-down = notification panel, swipe-up = app drawer
+- Shortcuts: custom app pairs (e.g., long-press home = lock screen)
+- Grid: 5×6 or custom
 
-- **Pixel Launcher** (from Android 12+ sources)
-- **Lawnchair** — closest open-source equivalent
-- **OpenLauncher** — FOSS, customizable
+## Installation
 
-## Icon Packs (most compatible)
+```bash
+# Via ADB to set default launcher
+adb shell cmd package set-default-home <package.name>
 
-- **Rboard** — Google Pixel aesthetic
-- **Moonrise** — dark, minimalist
-- **Delux** — colorful, modern
-- **Elta** — flat, clean
-- **Adaptive Icons** — per-app customization (Android 8+)
-
-## Installation Tips
-
-1. From Play Store (easiest)
-2. From F-Droid (FOSS only)
-3. Via Shizuku + Lawnchair patches for advanced features
-4. Manual install APK for specific versions
-
-## Customization Depth
-
-```
-Launcher → Icon pack → Widgets (via KWGT, etc.) → Gesture bindings
+# Example: set Lawnchair as default
+adb shell cmd package set-default-home ch.deletescape.lawnchair
 ```
 
-Combine launcher + Tasker for automation-heavy setups.
+*Tip: Lawnchair + Pix icon pack + 4×6 grid = best performance/looks ratio*
