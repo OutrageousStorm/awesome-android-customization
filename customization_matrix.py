@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
-"""Android customization feature matrix by ROM/tool"""
-MATRIX = {
-    'Icon packs': ['Nova Launcher', 'KWGT', 'Zooper Widget'],
-    'Launchers': ['Nova', 'KISS', 'Librefy'],
-    'Status bar': ['GravityBox', 'xStana', 'Custom ROM'],
-    'Navigation': ['NavBar', 'Edge Gestures', 'Full Gesture Nav'],
+"""Matrix of Android customization tools by feature"""
+import json
+
+TOOLS = {
+    'Magisk': {'root': True, 'modules': True, 'flashing': True, 'ease': 9},
+    'Xposed': {'root': True, 'modules': True, 'flashing': False, 'ease': 7},
+    'KernelSU': {'root': True, 'modules': True, 'flashing': True, 'ease': 8},
+    'LSPosed': {'root': False, 'modules': True, 'flashing': False, 'ease': 6},
+    'EdXposed': {'root': False, 'modules': True, 'flashing': False, 'ease': 5},
 }
-if __name__ == '__main__':
-    print("\n📊 Android Customization Features\n")
-    for category, tools in MATRIX.items():
-        print(f"{category}:")
-        for tool in tools:
-            print(f"  • {tool}")
+
+print("Customization Tool Feature Matrix\n")
+print(f"{'Tool':<15} {'Root':<6} {'Modules':<8} {'Flash':<6} {'Ease (1-10)'}")
+print("─" * 45)
+for tool, features in TOOLS.items():
+    print(f"{tool:<15} "
+          f"{'Yes' if features['root'] else 'No':<6} "
+          f"{'Yes' if features['modules'] else 'No':<8} "
+          f"{'Yes' if features['flashing'] else 'No':<6} "
+          f"{features['ease']}")
