@@ -36,3 +36,15 @@ Curated list of the best Android customization tools, ROMs, and resources.
 ---
 **Total repositories:** 40+  
 **Last updated:** $(date +%Y-%m-%d)
+
+## Batch ADB Command Executor (Bash)
+Execute ADB commands across multiple connected devices simultaneously.
+
+```bash
+bash tools/batch-adb-commands.sh list
+bash tools/batch-adb-commands.sh exec 'settings get global adb_enabled'
+bash tools/batch-adb-commands.sh install app.apk
+bash tools/batch-adb-commands.sh uninstall com.example.app
+```
+
+Perfect for managing multiple devices without manual commands.
