@@ -48,3 +48,18 @@ bash tools/batch-adb-commands.sh uninstall com.example.app
 ```
 
 Perfect for managing multiple devices without manual commands.
+
+---
+
+## 🛠️ Tools
+
+### android-ui-analyzer.py
+Detects and reports installed overlays, custom launchers, themes, and Magisk modules on a connected Android device.
+
+**Usage:**
+```bash
+python3 tools/android-ui-analyzer.py
+```
+
+Requirements: adb, Python 3.6+
+
