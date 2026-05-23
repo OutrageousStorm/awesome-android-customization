@@ -63,3 +63,18 @@ python3 tools/android-ui-analyzer.py
 
 Requirements: adb, Python 3.6+
 
+
+## 🚀 Automated Tools
+
+### Trendy Tools Validator
+**File:** `tools/trendy-android-tools.ts` (TypeScript/Deno)
+
+Automatically fetch trending Android tools from Reddit's r/Android, validate them, and find the most-starred versions on GitHub.
+
+**Usage:**
+```bash
+deno run --allow-net tools/trendy-android-tools.ts
+```
+
+**Output:** List of trending tools with GitHub star counts and validation status.
+
